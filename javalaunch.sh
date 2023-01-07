@@ -1,3 +1,6 @@
+# Java project run
+# By Andrii Klymukh
+
 #!/bin/bash
 mkdir java-project
 git clone https://github.com/mentorchita/example-app-nodejs-backend-react-frontend java-project
