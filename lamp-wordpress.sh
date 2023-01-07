@@ -1,3 +1,6 @@
+# LAMP & Wordpress install
+# By Andrii Klymukh
+
 #!/bin/bash
 
 sudo apt update
@@ -28,7 +31,6 @@ wget https://wordpress.org/latest.tar.gz
 tar xzvf latest.tar.gz
 
 sudo cp -R wordpress/* /var/www/html
-
 
 
 # Define rigths
