@@ -1,0 +1,28 @@
+name: Ubuntu-Bash
+
+on:
+  push:
+    branches:   
+      - main
+  workflow_dispatch:    
+
+jobs:
+
+  run_scripts:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Check actual version
+      run: |
+         cat /etc/issue
+      shell: bash
+
+    - name: Make executable
+      run: |
+         chmod +x ./myname.sh
+
+    - name: Run script file
+      run: |
+         ./myname.sh
+      shell: bash
